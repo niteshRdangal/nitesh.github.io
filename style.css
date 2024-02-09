@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+}
+
+.animation {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.animated-text {
+    overflow: hidden; /* Hide overflowing text */
+    white-space: nowrap; /* Do not wrap text */
+    animation: type 2s steps(28) 1s forwards; /* Animation duration, steps, and delay */
+}
+
+@keyframes type {
+    to {
+        width: 100%; /* Show full text */
+    }
+}
+
+.contact-info {
+    font-size: 18px;
+}
